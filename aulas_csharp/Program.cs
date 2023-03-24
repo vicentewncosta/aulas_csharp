@@ -8,32 +8,25 @@ using System.Threading.Tasks;
 namespace HelloWorld
 {
     class Program
-    {
+    {   
+
+        enum Cor { preto, azul, amarelo, vermelho }
+        enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
+
         static void Main(string[] args)
-        {
-            string produto1 = "fifa",
-            string produto2 = "cs",
-            string produto3 = "FUT",
-            string produto4 = "bola",
-            string produto5 = "gol",
-         
+        {   
+            int contador = 0;
+            while (contador < 30)
+            {
+                Console.WriteLine(contador + 1);
+                Console.WriteLine("Rodando o while!"); 
+                contador++;
+            }
 
-            string[] produtos = new string[5] {
-
-                "fifa",
-                "cs",
-                "FUT",
-                "bola",
-                "gol",
-                          
-            };
-
-            Console.WriteLine(produtos[1]);
-
+            Console.WriteLine("Acabou papai!"); 
             Console.ReadLine();
-
         }
-
+        
         static void ExibirMsg()
         {
             Console.WriteLine("Esse sistema é show de bola!");
