@@ -11,9 +11,25 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            GerarPreco(500);
-            GerarPreco(50);
-            GerarPreco(5);
+            string produto1 = "fifa",
+            string produto2 = "cs",
+            string produto3 = "FUT",
+            string produto4 = "bola",
+            string produto5 = "gol",
+         
+
+            string[] produtos = new string[5] {
+
+                "fifa",
+                "cs",
+                "FUT",
+                "bola",
+                "gol",
+                          
+            };
+
+            Console.WriteLine(produtos[1]);
+
             Console.ReadLine();
 
         }
@@ -31,8 +47,17 @@ namespace HelloWorld
 
         static void GerarPreco(int preco)
         {
+            //funçção Abs para sempre trazer um resultado positivo
+            int precoAbs = Math.Abs(preco);
+            int valorFinal = precoAbs + (2 * precoAbs);
+            Console.WriteLine("Valor final: " + valorFinal);
+        }
 
-            Console.WriteLine(preco);
+        static int Somar (int a, int b, int c)
+        {
+            int resuiltadoFinal = a + b + c; 
+            return resuiltadoFinal;
+
         }
 
 
